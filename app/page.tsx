@@ -33,11 +33,11 @@ export default function Home() {
             </div>
 
             <h1 className="text-gray-4xl font-extrabold tracking-tight lg:text-6xl mt-6">
-              Receba alertas de fortes chuvas em sua região
+              Receba alertas de incêndios em sua região
             </h1>
 
             <p className="max-w-xl mx-auto text-base lg:text-lg text-secondary-foreground mt-4">
-              O Comntempo veio para monitorar e informar moradores da vizinhança a respeito das cheias das águas, por meio de dados colhidos da comunidade através da plataforma.
+              O Sistema de Observação e Monitoramento de Incêndio (SOMI) veio para monitorar e informar moradores da vizinhança e autoridades a respeito de incêndios, por meio de dados colhidos da comunidade através de nosso aparelho comunitário.
             </p>
 
             <div className="flex justify-center mt-8">
