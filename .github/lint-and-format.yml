@@ -1,0 +1,35 @@
+name: Lint and Format
+
+on:
+  push:
+    branches:
+      - main # Substitua pelo nome da sua branch principal, se diferente
+  pull_request:
+
+jobs:
+  lint-and-format:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout do código
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Configuração do Node.js
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16' # Use a versão que o seu projeto precisa
+          cache: 'npm'
+
+      # Instalar dependências
+      - name: Install dependencies
+        run: npm install
+
+      # Rodar o Prettier
+      - name: Run Prettier
+        run: npm run format
+
+      # Rodar o Next.js lint
+      - name: Run Next.js lint
+        run: npm run lint
