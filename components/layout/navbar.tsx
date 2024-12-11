@@ -1,7 +1,11 @@
 import Link from 'next/link';
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
+import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from '@/components/ui/popover';
 import { Users } from 'lucide-react';
 
 function Navbar() {
@@ -26,8 +30,9 @@ function Navbar() {
               <div className="space-y-2">
                 <h4 className="font-medium">Dispositivos Conectados</h4>
                 <p className="text-sm text-gray-500">
-                  Existem atualmente 2 dispositivos conectados à nossa rede de monitoramento,
-                  coletando e compartilhando ativamente dados sobre potenciais riscos de incêndio.
+                  Existem atualmente 2 dispositivos conectados à nossa rede de
+                  monitoramento, coletando e compartilhando ativamente dados
+                  sobre potenciais riscos de incêndio.
                 </p>
               </div>
             </PopoverContent>

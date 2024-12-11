@@ -5,20 +5,20 @@ import { MAP_CONFIG } from '@/constants/map-config';
 import 'leaflet/dist/leaflet.css';
 import { somiIcon } from '@/constants/map-icon';
 
-
 L.Icon.Default.mergeOptions({
-  iconRetinaUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon-2x.png',
-  shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png',
+  iconRetinaUrl:
+    'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon-2x.png',
+  shadowUrl:
+    'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png',
 });
-
 
 export default function Map() {
   return (
-    <div style={{ height: "594px", width: "100%" }}>
+    <div style={{ height: '594px', width: '100%' }}>
       <MapContainer
         center={MAP_CONFIG.center}
         zoom={MAP_CONFIG.zoom}
-        style={{ height: "100%", width: "100%" }}
+        style={{ height: '100%', width: '100%' }}
         dragging={false}
         touchZoom={false}
         scrollWheelZoom={false}

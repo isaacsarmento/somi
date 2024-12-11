@@ -9,7 +9,12 @@ interface FeatureCardProps {
   votes: number;
 }
 
-export function FeatureCard({ title, description, tags, votes }: FeatureCardProps) {
+export function FeatureCard({
+  title,
+  description,
+  tags,
+  votes,
+}: FeatureCardProps) {
   return (
     <Card className="w-full hover:shadow-md transition-shadow">
       <CardHeader>

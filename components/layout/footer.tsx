@@ -1,5 +1,5 @@
-import Link from "next/link";
-import Image from "next/image";
+import Link from 'next/link';
+import Image from 'next/image';
 
 export function Footer() {
   return (
@@ -35,9 +35,12 @@ export function Footer() {
                   </Link>
                 </li>
                 <li>
-                    <a  href="#funcionalidades" className="text-gray-600 hover:text-green-500 cursor-pointer">
-                        Funcionalidades
-                    </a>
+                  <a
+                    href="#funcionalidades"
+                    className="text-gray-600 hover:text-green-500 cursor-pointer"
+                  >
+                    Funcionalidades
+                  </a>
                 </li>
                 <li>
                   <Link
@@ -105,7 +108,7 @@ export function Footer() {
             <p className="text-gray-700 text-sm">
               Olá 👋 Sou a equipe de robótica <strong>Shield NIG</strong>, o
               criador dessa plataforma. Você poderá acompanhar meu trabalho no
-              meu{" "}
+              meu{' '}
               <a
                 href="https://www.instagram.com/shield_nig/"
                 target="_blank"
