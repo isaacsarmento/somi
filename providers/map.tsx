@@ -3,11 +3,11 @@ import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import L from 'leaflet';
 import { MAP_CONFIG } from '@/constants/map-config';
 import 'leaflet/dist/leaflet.css';
+import { somiIcon } from '@/constants/map-icon';
 
 
 L.Icon.Default.mergeOptions({
   iconRetinaUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon-2x.png',
-  iconUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon.png',
   shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png',
 });
 
@@ -31,7 +31,7 @@ export default function Map() {
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         />
-        <Marker position={MAP_CONFIG.center}>
+        <Marker position={MAP_CONFIG.center} icon={somiIcon}>
           <Popup>Serra do Vulcão - Local de estudo para nosso projeto.</Popup>
         </Marker>
       </MapContainer>

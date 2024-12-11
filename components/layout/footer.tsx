@@ -35,12 +35,9 @@ export function Footer() {
                   </Link>
                 </li>
                 <li>
-                  <Link
-                    href="/features"
-                    className="text-gray-600 hover:text-green-500"
-                  >
-                    Funcionalidades
-                  </Link>
+                    <a  href="#funcionalidades" className="text-gray-600 hover:text-green-500 cursor-pointer">
+                        Funcionalidades
+                    </a>
                 </li>
                 <li>
                   <Link
@@ -59,7 +56,7 @@ export function Footer() {
               <ul className="space-y-2">
                 <li>
                   <Link
-                    href="/terms"
+                    href="/termos"
                     className="text-gray-600 hover:text-green-500"
                   >
                     Termos de serviço

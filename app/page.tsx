@@ -1,5 +1,6 @@
 'use client'
 import { FeaturesSection } from "@/components/features/feature-seaction";
+import CTA from "@/components/layout/cta";
 import { Button } from "@/components/ui/button";
 import { BookOpen } from 'lucide-react';
 import dynamic from "next/dynamic";
@@ -22,7 +23,7 @@ export default function Home() {
     return (
       <section className="flex flex-col items-center justify-start bg-background min-h-screen p-5">
         <div className="relative items-center w-full px-5 py-12 mx-auto lg:px-16 max-w-7xl md:px-12">
-          <div className="max-w-3xl mx-auto text-center mt-16"> {/* Adicionado margin-top para descer mais a página */}
+          <div className="max-w-3xl mx-auto text-center mt-16">
             <div className="flex items-center justify-center mb-8 relative">
               <div className="flex items-center justify-start w-auto px-6 py-3 rounded-full bg-secondary relative">
                 <div className="absolute left-[13px] top-1/2 transform -translate-y-1/2 w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse" />
@@ -41,8 +42,8 @@ export default function Home() {
             </p>
 
             <div className="flex justify-center mt-8">
-              <Button className="w-auto flex items-center justify-center gap-2 py-6 px-10 text-lg">
-                <BookOpen className="h-5 w-5" />
+              <Button className="w-auto flex items-center justify-center gap-2 py-6 px-10 text-lg group">
+                <BookOpen className="h-5 w-5 group-hover:scale-125 transition-transform duration-200" />
                 Aprenda mais!
               </Button>
             </div>
@@ -62,6 +63,9 @@ export default function Home() {
           </div>
           <div className="mt-16">
             <FeaturesSection />
+          </div>
+          <div className="mt-16">
+            <CTA />
           </div>
         </div>
       </section>
