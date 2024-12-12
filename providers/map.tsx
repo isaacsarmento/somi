@@ -19,13 +19,13 @@ export default function Map() {
         center={MAP_CONFIG.center}
         zoom={MAP_CONFIG.zoom}
         style={{ height: '100%', width: '100%' }}
-        dragging={false}
-        touchZoom={false}
-        scrollWheelZoom={false}
+        dragging={true}
+        touchZoom={true}
+        scrollWheelZoom={true}
         doubleClickZoom={false}
         boxZoom={false}
         keyboard={false}
-        zoomControl={false}
+        zoomControl={true}
       >
         <TileLayer
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

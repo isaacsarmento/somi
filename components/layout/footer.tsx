@@ -65,14 +65,14 @@ export function Footer() {
                     Termos de serviço
                   </Link>
                 </li>
-                <li>
+                 {/*<li>
                   <Link
                     href="/privacy"
                     className="text-gray-600 hover:text-green-500"
                   >
                     Política de privacidade
                   </Link>
-                </li>
+                </li>*/}
               </ul>
             </div>
 

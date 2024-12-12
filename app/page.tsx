@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button';
 import { BookOpen } from 'lucide-react';
 import dynamic from 'next/dynamic';
 import { useState, useEffect } from 'react';
+import Link from 'next/link';
 
 // Carregamento dinâmico do mapa
 const Map = dynamic(() => import('@/providers/map'), { ssr: false });
@@ -45,36 +46,38 @@ export default function Home() {
           </p>
 
           <div className="flex justify-center mt-8">
-            <Button className="w-auto flex items-center justify-center gap-2 py-6 px-10 text-lg group">
-              <BookOpen className="h-5 w-5 group-hover:scale-125 transition-transform duration-200" />
-              Aprenda mais!
-            </Button>
+            <Link href="https://windy-peach-aa5.notion.site/SOMI-Shield-NIG-158552eaf10c80999e92e764d5993fd1" passHref>
+                <Button className="w-auto flex items-center justify-center gap-2 py-6 px-10 text-lg group">
+                  <BookOpen className="h-5 w-5 group-hover:scale-125 transition-transform duration-200" />
+                  Aprenda mais!
+                </Button>
+            </Link>
           </div>
-        </div>
 
-        {/* Espaço para o mapa */}
-        <div
-          className="relative mt-24 rounded-lg overflow-hidden border-4 border-primary"
-          style={{ height: '600px', width: '100%' }}
-        >
-          {loading ? (
-            <div className="absolute inset-0 flex items-center justify-center bg-white bg-opacity-75">
-              <div
-                className="spinner-border animate-spin inline-block w-8 h-8 border-4 rounded-full border-t-transparent border-primary"
-                role="status"
-              ></div>
-            </div>
-          ) : (
-            <div className="absolute inset-0 z-10">
-              <Map />
-            </div>
-          )}
-        </div>
-        <div className="mt-16">
-          <FeaturesSection />
-        </div>
-        <div className="mt-16">
-          <CTA />
+          {/* Espaço para o mapa */}
+          <div
+            className="relative mt-24 rounded-lg overflow-hidden border-4 border-primary"
+            style={{ height: '600px', width: '100%' }}
+          >
+            {loading ? (
+              <div className="absolute inset-0 flex items-center justify-center bg-white bg-opacity-75">
+                <div
+                  className="spinner-border animate-spin inline-block w-8 h-8 border-4 rounded-full border-t-transparent border-primary"
+                  role="status"
+                ></div>
+              </div>
+            ) : (
+              <div className="absolute inset-0 z-10">
+                <Map />
+              </div>
+            )}
+          </div>
+          <div className="mt-16">
+            <FeaturesSection />
+          </div>
+          <div className="mt-16">
+            <CTA />
+          </div>
         </div>
       </div>
     </section>

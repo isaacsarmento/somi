@@ -25,7 +25,7 @@ const CTA = () => {
         </h3>
         <div className="not-prose mx-auto flex items-center gap-2">
           <Button className="w-fit" variant="link" asChild>
-            <Link href="#">Aprenda mais {'->'}</Link>
+            <Link href="https://windy-peach-aa5.notion.site/SOMI-Shield-NIG-158552eaf10c80999e92e764d5993fd1">Aprenda mais {'->'}</Link>
           </Button>
         </div>
       </Container>
